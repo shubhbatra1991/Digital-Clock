@@ -3,27 +3,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Dates and times</title>
-    <style>
-        body{
-            background:#333;
-        }
-        .clock{
-            font-size: 4em;
-            text-align: center;
-            margin: 200px auto;
-            color: yellow;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .clock span {
-            padding: 20px;
-            background: #444;
-        }
-    </style>
+    
 </head>
 <body>
     
-<div class ="clock"></div>
+    <div class ="main">
+            <video autoplay muted loop id="myVideo">
+                <source src="video.mp4" type="video/mp4" muted autoplay loop>
+            </video>
+        <!-- Optional: some overlay text to describe the video -->
+            <div class="row row-centered pos content">
+                <div class="col-lg-8 col-xs-12 col-centered">
+                    <div class ="clock"></div>
+                </div>
+                <div class="col-lg-8 col-xs-12 col-centered ">
+                    <div class="row">
+                        <h1>Time</h1>
+                        <p>Lost time is never found again.</p>
+                        <div class="col-md-4 col-lg-2 mybtn-r">
+                        <button id="myBtn" onclick="myFunction()" class="btn btn-primary  btn-block">Pause the video</button>
+                        </div><!-- /col -->
+                    </div><!-- /row -->
+                </div>
+            </div>
+    </div>
+  
 
     <script src="sandbox.js"></script>
 </body>

@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Asap", sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+/* section css */
+.main{
+    width: 100%;
+    height: 100%;
+    background: #ffe3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main video{
+    width: 75%;
+
+}
+.clock {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 200px auto;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .clock span {
+    padding: 20px;
+    background: #444;
+}  */
+
+.content{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    color: #fff;
+}
+.content h1{
+    font-size: 20px;
+}
+
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.mybtn-r{
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+  /* Responsive video bg */
+  /* @media (min-aspect-ratio: 16/9) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    video {
+      width: auto;
+      height: 100%;
+    }
+  } */
+
